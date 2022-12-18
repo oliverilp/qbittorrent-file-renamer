@@ -5,7 +5,23 @@ from os import listdir
 from os.path import isfile
 
 BANNED_FILE_TYPES = (".txt", ".exe")
-BANNED_WORDS = {"rarbg", "bluray", "blu-ray", "x264-", "x265-", "h264-", "h265-", "hevc", "webrip", "hdrip", "web-dl"}
+BANNED_WORDS = {
+    "rarbg",
+    "bluray",
+    "blu-ray",
+    "x264-",
+    "x265-",
+    "h264-",
+    "h265-",
+    "hevc",
+    "bdrip",
+    "webrip",
+    "hdrip",
+    "web-dl",
+    "2160p",
+    "1080p",
+    "720p"
+}
 
 
 def get_filtered_name(file_name: str, count: int = 3):
